@@ -28,7 +28,23 @@ section.sobre
 		+make-sm-column(8)
 		+make-sm-column-offset(2)
 		text-align: center
+		margin: 30px 0 0 0
 
 		.botao
 			display: table
 			margin: 30px auto
+
+	.parceiros
+		text-align: center
+		.links 
+			+flexbox
+			+align-items(center)
+			+justify-content(space-around)
+			text-align: center
+			a
+				font-size: 20px
+				color: $preto
+
+				&:hover
+					border-color: $verde
+					color: $verde

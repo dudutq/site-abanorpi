@@ -5,7 +5,7 @@
 	<title>teste</title>
 	<link rel="stylesheet" href="css/geral.css">
 	<link rel="stylesheet" href="css/plugins.css">
-	<link rel="stylesheet" href="css/sobre.css">
+	<link rel="stylesheet" href="css/contato.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
 </head>
 
@@ -28,28 +28,54 @@
 				</ul>
 			</nav>
 
-			<h1><strong>Quem somos</strong></h1>
+			<h1><strong>Fale com a agente</strong></h1>
 			<p>Associação batista do norte pioneiro</p>
 		</div>
 	</header>
 
 	<main>
-		<section class="sobre">
+		<section class="contato">
 			<div class="container">
-				<div class="texto">
-					<p><strong>Lorem ipsum dolor sit amet</strong>,consectetur adipisicing elit. Vitae iste aut quas dolor debitis commodi hic sed atque ex, molestiae, amet optio expedita accusamus perferendis velit, repudiandae autem tempore beatae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nulla esse, non eligendi facere sed explicabo. Nesciunt eligendi, impedit amet architecto, asperiores debitis magni quis ex distinctio veniam, unde fuga?</p>
-				</div>
-				
-				<br><br><br><br><br><br><br>
+				<form action="" method="post">
+					<div class="cols">
+						<div class="col">
+							<div class="form-group">
+								<input type="text" placeholder="Nome" required>
+							</div>
+						</div>
 
-				<div class="parceiros">
-					<h2>Parceiros</h2>
-					<div class="links">
-						<p><a href="http://batistasparana.org.br/" target="_blank">Convenção Batista paranaence <strong>(CBP)</strong></a></p>
+						<div class="col">
+							<div class="form-group">
+								<input type="email" placeholder="E-mail" required>
+							</div>
+						</div>
 
-						<p><a href="http://www.convencaobatista.com.br/siteNovo/index.php" target="_blank">Convenção Batista Brasileira <strong>(CBB)</strong></a></p>
+						<div class="col">
+							<div class="form-group">
+								<input type="number" placeholder="Telefone" required>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="form-group">
+								<input type="text" placeholder="Assunto" required>
+							</div>
+						</div>
 					</div>
-				</div>
+
+					<div class="form-group">
+						<textarea name="" placeholder="Mensagem" required></textarea>
+					</div>
+
+
+					<div class="form-group">
+						<button type="submit" class="botao medio"><i class="fas fa-arrow-right"></i> Enviar mensagem</button>
+					</div>
+
+					<p class="bg-success"><i class="fas fa-info-circle"></i> Mensagem enviada com susseso!</p>
+					<p class="bg-danger"><i class="fas fa-info-circle"></i> Erro ao enviar mensagem!</p>
+
+				</form>
 			</div>
 		</section>
 	</main>
