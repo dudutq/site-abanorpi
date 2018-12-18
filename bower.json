@@ -1,0 +1,25 @@
+{
+  "name": "abanorpi",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "dudutq <dudutq@hotmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "font-awesome": "^5.6.1",
+    "bootstrap-sass": "^3.4.0",
+    "breakpoint-sass": "^2.7.1",
+    "sass-flex-mixin": "^1.0.3"
+  }
+}

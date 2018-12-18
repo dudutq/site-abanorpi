@@ -1,0 +1,34 @@
+section.sobre
+	.botoes
+		+flexbox
+		+align-items(center)
+		+justify-content(center)
+		text-align: center
+
+		+make-sm-column(10)
+		+make-sm-column-offset(1)
+
+		+breakpoint($tablet)
+		 	display: block
+
+		.botao
+			display: table
+			margin: 20px 30px 20px 0 !important
+		
+		[class^="botao-"]
+
+			+breakpoint($tablet)
+		 		display: inline-block
+		 		margin: 20px 30px 20px 0 !important
+		 		font-size: 20px
+		 		padding: 9px
+
+
+	.texto
+		+make-sm-column(8)
+		+make-sm-column-offset(2)
+		text-align: center
+
+		.botao
+			display: table
+			margin: 30px auto
