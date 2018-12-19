@@ -1,0 +1,28 @@
+.menu-responsivo
+	position: fixed
+	width: 150px
+	height: 100%
+	top: 0
+	left: -150px
+	+gradient(0deg, $verde, $azul)
+
+	&.ativo
+		+transition(.2s)
+		left: 0
+	ul
+		li
+			border-bottom: 1px solid $branco
+			a
+				padding: 7px
+				display: block
+				color: $branco
+
+				&:hover,
+				&:focus
+					background-color: rgba($preto, 0.4)
+
+.layout
+	&.ativo
+		+transition(.2s)
+		padding-left: 150px
+

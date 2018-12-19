@@ -22,5 +22,8 @@
     "breakpoint-sass": "^2.7.1",
     "sass-flex-mixin": "^1.0.3"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "jquery": "^3.3.1",
+    "wow": "wowjs#^1.1.2"
+  }
 }

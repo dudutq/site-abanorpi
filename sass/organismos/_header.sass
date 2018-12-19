@@ -11,7 +11,7 @@ header
 		width: 100%
 		height: 30px
 		+gradient(90deg, $verde, $azul)
-
+		
 	background:
 		image: url('../imagens/slide.jpg')
 		position: top center
@@ -20,31 +20,74 @@ header
 		attachment: fixed
 		size: cover
 
-
-
 	.logo
 		float: left
-		margin: 30px 0 0
+		margin: 30px 0 0 
+		img
+			width: 150px
 
-	nav
+	.menu
 		float: right
 		margin: 35px 0 0
-		ul
+
+		nav,
+		.hanburger
+			display: inline-block
+
+		nav
+			+breakpoint($tablet)
+				display: none
+
+			+breakpoint($celular)
+				display: none
+
+
+			ul
+				li
+					display: inline-block
+					margin: 0 20px 0 0
+					a
+						color: $branco
+						text-transform: uppercase
+
+						&:hover
+							&:after
+								width: 90%
+
+						&:after
+							content: ""
+							display: table
+							margin: 5px auto 0
+							width: 0%
+							height: 2px
+							background-color: $branco
+							+transition(.3s)
+
+		.hanburger
+			+breakpoint($desktop)
+				display: none
+
 			li
 				display: inline-block
-				margin: 0 20px 0 0 
-
+				margin: 0 5px 0 0
 				a
+					+font-size(40px)
 					color: $branco
-					text-transform: uppercase
+					display: block
+					text-align: center
 
 	h1
-		color: $branco
 		clear: both
 		margin: 190px auto 30px auto !important
+		font-weight: $light
 		border: 3px solid $branco
 		padding: 20px
 		display: table
+		+breakpoint($celular)
+			+font-size(40px)
+			
+	h1,
 	p
 		color: $branco
 		text-align: center
+		text-transform: uppercase

@@ -3,19 +3,19 @@ section.sobre
 		+flexbox
 		+align-items(center)
 		+justify-content(center)
+		margin: 50px 0
 		text-align: center
 
 		+make-sm-column(10)
 		+make-sm-column-offset(1)
 
 		+breakpoint($tablet)
-		 	display: block
+			display: block
 
-		.botao
+
+		[class^="botao-"]
 			display: table
 			margin: 20px 30px 20px 0 !important
-		
-		[class^="botao-"]
 
 			+breakpoint($tablet)
 		 		display: inline-block
@@ -33,18 +33,3 @@ section.sobre
 		.botao
 			display: table
 			margin: 30px auto
-
-	.parceiros
-		text-align: center
-		.links 
-			+flexbox
-			+align-items(center)
-			+justify-content(space-around)
-			text-align: center
-			a
-				font-size: 20px
-				color: $preto
-
-				&:hover
-					border-color: $verde
-					color: $verde

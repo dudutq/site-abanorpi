@@ -2,106 +2,130 @@
 <html lang="pt_br">
 <head>
 	<meta charset="UTF-8">
-	<title>teste</title>
+	<title>ABANORPI | Fale com a gente</title>
 	<link rel="stylesheet" href="css/geral.css">
 	<link rel="stylesheet" href="css/plugins.css">
 	<link rel="stylesheet" href="css/contato.css">
+	<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
 </head>
 
 <body>
-	<header>
-		<div class="container">
-			<div class="logo">
+	<nav class="menu-responsivo">
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="sobre.html">Sobre</a></li>
+			<li><a href="igrejas/index.html">Igrejas</a></li>
+			<li><a href="departamentos.html">Departamentos</a></li>
+			<li><a href="contato.html">Contato</a></li>
+		</ul>
+	</nav>
+
+	<div class="layout">
+		<header>
+			<div class="container">
+				<div class="logo wow bounceInLeft"  data-wow-duration="1s" data-wow-delay="0s">
+					<a href="index.html">
+						<img src="imagens/logo.png" alt="logo ABANORPI">
+					</a>
+				</div>
+				
+				<div class="menu wow bounceInDown"  data-wow-duration="1s" data-wow-delay="0.2s">
+					<nav>
+						<ul>
+							<li><a href="index.html">Inicio</a></li>
+							<li><a href="sobre.html">Sobre</a></li>
+							<li><a href="igrejas/index.html">Igrejas</a></li>
+							<li><a href="departamentos.html">Departamentos</a></li>
+							<li><a href="contato.html">Contato</a></li>
+						</ul>
+					</nav>
+
+					<ul class="hanburger">
+						<li><a id="abrir" class="toggle" href="javascript:;"><i class="fas fa-bars"></i></a></li>
+					</ul>
+					
+				</div>
+				
+
+				<h1><strong>Fale com a agente</strong></h1>
+				<p>Associação batista do norte pioneiro</p>
+			</div>
+		</header>
+
+		<main>
+			<section class="contato">
+				<div class="container">
+					<form action="" method="post">
+						<div class="cols">
+							<div class="col">
+								<div class="form-group">
+									<input type="text" placeholder="Nome" required>
+								</div>
+							</div>
+
+							<div class="col">
+								<div class="form-group">
+									<input type="email" placeholder="E-mail" required>
+								</div>
+							</div>
+
+							<div class="col">
+								<div class="form-group">
+									<input type="number" placeholder="Telefone" required>
+								</div>
+							</div>
+
+							<div class="col">
+								<div class="form-group">
+									<input type="text" placeholder="Assunto" required>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<textarea name="" placeholder="Mensagem" required></textarea>
+						</div>
+
+
+						<div class="form-group">
+							<button type="submit" class="botao medio"><i class="fas fa-arrow-right"></i> Enviar mensagem</button>
+						</div>
+
+						<p class="bg-success"><i class="fas fa-info-circle"></i> Mensagem enviada com susseso!</p>
+						<p class="bg-danger"><i class="fas fa-info-circle"></i> Erro ao enviar mensagem!</p>
+
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="logo-rodape">
 				<a href="index.html">
 					<img src="imagens/logo.png" alt="logo ABANORPI">
 				</a>
 			</div>
 
-			<nav>
-				<ul>
-					<li><a href="index.html">Inicio</a></li>
-					<li><a href="sobre.html">Sobre</a></li>
-					<li><a href="igrejas.html">Igrejas</a></li>
-					<li><a href="departamentos.html">Departamentos</a></li>
-					<li><a href="contato.html">Contato</a></li>
-				</ul>
-			</nav>
+			<p class="texto-cinza">Siganos nas redes sociais: &nbsp;
+				<a class="texto-cinza" href="https://www.facebook.com/pibsantoantoniodaplatina/">
+					<i class="fab fa-facebook-f"></i>
+				</a>
 
-			<h1><strong>Fale com a agente</strong></h1>
-			<p>Associação batista do norte pioneiro</p>
-		</div>
-	</header>
+				<a class="texto-cinza" href="">
+					<i class="fab fa-instagram"></i>
+				</a>
 
-	<main>
-		<section class="contato">
-			<div class="container">
-				<form action="" method="post">
-					<div class="cols">
-						<div class="col">
-							<div class="form-group">
-								<input type="text" placeholder="Nome" required>
-							</div>
-						</div>
+				<a class="texto-cinza" href="">
+					<i class="fab fa-twitter"></i>
+				</a>
+			</p>
 
-						<div class="col">
-							<div class="form-group">
-								<input type="email" placeholder="E-mail" required>
-							</div>
-						</div>
-
-						<div class="col">
-							<div class="form-group">
-								<input type="number" placeholder="Telefone" required>
-							</div>
-						</div>
-
-						<div class="col">
-							<div class="form-group">
-								<input type="text" placeholder="Assunto" required>
-							</div>
-						</div>
-					</div>
-
-					<div class="form-group">
-						<textarea name="" placeholder="Mensagem" required></textarea>
-					</div>
-
-
-					<div class="form-group">
-						<button type="submit" class="botao medio"><i class="fas fa-arrow-right"></i> Enviar mensagem</button>
-					</div>
-
-					<p class="bg-success"><i class="fas fa-info-circle"></i> Mensagem enviada com susseso!</p>
-					<p class="bg-danger"><i class="fas fa-info-circle"></i> Erro ao enviar mensagem!</p>
-
-				</form>
-			</div>
-		</section>
-	</main>
-
-	<footer>
-		<div class="logo-rodape">
-			<a href="index.html">
-				<img src="imagens/logo.png" alt="logo ABANORPI">
-			</a>
-		</div>
-
-		<p class="texto-cinza">Siganos nas redes sociais: &nbsp;
-			<a class="texto-cinza" href="https://www.facebook.com/pibsantoantoniodaplatina/">
-				<i class="fab fa-facebook-f"></i>
-			</a>
-
-			<a class="texto-cinza" href="">
-				<i class="fab fa-instagram"></i>
-			</a>
-
-			<a class="texto-cinza" href="">
-				<i class="fab fa-twitter"></i>
-			</a>
-		</p>
-
-		<p class="texto-cinza">Copyright &copy; 2018 - todos os direitos reservados</p>
-	</footer>
+			<p class="texto-cinza">Copyright &copy; 2018 - todos os direitos reservados</p>
+		</footer>
+	</div>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/wow/dist/wow.js"></script>
+	<script src="js/function.js"></script>
 </body>
 </html>
